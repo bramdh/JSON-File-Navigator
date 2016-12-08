@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    width: 100%;
+}
+body {
+    background: #181818;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-size: 14px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 25px;
+}
+table {
+    margin-top: 30px;
+    width: 100%;
+    border-spacing: 0;
+}
+td, th {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #282828;
+}
+th {
+    text-transform: uppercase;
+}
+tr:hover {
+    background: #333;
+    cursor: pointer;
+}
+tr .icon span:before, #backbtn span:before {
+    font-family: FontAwesome;
+}
+tr.type-folder .icon span:before {
+    content: "\f115";
+}
+tr.type-image .icon span:before {
+    content: "\f03e";
+}
+#breadcrumbs {
+    padding: 0;
+}
+#breadcrumbs li {
+    display: inline-block;
+    list-style-type: none;
+}
+#breadcrumbs li a {
+    cursor: pointer;
+}
+#backbtn {
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 10px 20px 10px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+}
+#backbtn:hover {
+    border-color: #1db954;
+}
+#backbtn span {
+    margin-right: 10px;
+}
+#backbtn span:before {
+    content: "\f104";
+}
+#about {
+    font-size: 12px;
+    margin: 45px 0;
+    color: #9a9a9a;
+}

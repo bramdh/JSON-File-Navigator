@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filemanager</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="assets/js/jquery-3.1.0.min.js"></script>
+    <script src="assets/js/filemanager.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>File navigator</h1>
+        <!-- breadcrumbs -->
+        <ul id="breadcrumbs">
+        </ul>
+
+        <!-- back button -->
+        <div onclick="drawFileManager()" id="backbtn"><span></span>Back</div>
+
+        <!-- filelist -->
+        <table id="filelist">
+            <tr>
+                <th></th><th>Name</th><th>Size (kb)</th><th>Date</th><th>Type</th>
+            </tr>
+        </table>
+
+        <!-- about -->
+        <p id="about">
+            About: Read and navigate through the structure of a json-file, client-side.
+        </p>
+    </div>
+</body>
+</html>
